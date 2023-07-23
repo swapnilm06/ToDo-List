@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #007BFF;
+    padding: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.left-pane,
+.right-pane {
+    padding: 20px;
+}
+
+.left-pane {
+    flex: 1;
+}
+
+.right-pane {
+    background-color: #fff;
+    flex: 1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    margin: 0;
+    color: #007BFF;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+li.completed {
+    background-color: #f0f0f0;
+    text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.delete {
+    cursor: pointer;
+    color: #e60000;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #0056b3;
+}
+
+#empty-state {
+    text-align: center;
+    color: #777;
+    margin-top: 16px;
+}
